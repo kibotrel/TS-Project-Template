@@ -193,6 +193,7 @@
     "tsdoc/syntax": "warn",
     "unicorn/filename-case": ["error", { "case": "camelCase" }],
     "unicorn/no-nested-ternary": "off",
+    "unicorn/no-object-as-default-parameter": "off",
     "unicorn/number-literal-case": "off",
     "unicorn/prefer-logical-operator-over-ternary": "off",
     "unicorn/prevent-abbreviations": [

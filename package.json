@@ -3,7 +3,7 @@
   "bugs": "",
   "description": "",
   "devDependencies": {
-    "@commitlint/cli": "17.7.1",
+    "@commitlint/cli": "18.4.2",
     "@commitlint/config-conventional": "17.7.0",
     "@typescript-eslint/eslint-plugin": "6.1.0",
     "@typescript-eslint/parser": "6.1.0",
@@ -21,7 +21,7 @@
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-sonarjs": "0.23.0",
     "eslint-plugin-tsdoc": "0.2.17",
-    "eslint-plugin-unicorn": "48.0.0",
+    "eslint-plugin-unicorn": "49.0.0",
     "eslint-plugin-vitest": "0.3.9",
     "husky": "8.0.3",
     "nodemon": "3.0.1",

@@ -9,6 +9,7 @@ Aside of the obvious Typescript support, this template includes the following fe
 
 - A strict Typescript configuration.
 - A targeted node version (specified in `.nvmrc`).
+- A Dependabot policy to keep dependencies up to date.
 - [eslint](https://eslint.org/) with a strong configuration (mostly formatting and quality of life rules).
 - [prettier](https://prettier.io/) to enforce a consistent code style.
 - [vitest](https://vitest.dev/) to run tests.

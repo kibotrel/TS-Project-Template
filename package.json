@@ -4,7 +4,7 @@
   "description": "",
   "devDependencies": {
     "@commitlint/cli": "18.4.2",
-    "@commitlint/config-conventional": "17.7.0",
+    "@commitlint/config-conventional": "18.4.3",
     "@typescript-eslint/eslint-plugin": "6.11.0",
     "@typescript-eslint/parser": "6.12.0",
     "@vitest/coverage-v8": "0.34.6",
@@ -28,7 +28,7 @@
     "pm-exec": "1.0.0",
     "prettier": "3.1.0",
     "ts-node": "10.9.1",
-    "typescript": "5.2.2",
+    "typescript": "5.3.2",
     "vitest": "0.33.0"
   },
   "engines": {

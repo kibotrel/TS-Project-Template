@@ -2,7 +2,6 @@
 
 This includes a basic setup for a typescript project with all the scripts needed to develop, build, test and publish any package written in Typescript.
 
-
 ## :package: What's in the box ?
 
 Aside of the obvious Typescript support, this template includes the following features:

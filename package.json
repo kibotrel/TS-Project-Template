@@ -40,6 +40,12 @@
     "dist/**/*"
   ],
   "homepage": "",
+  "imports": {
+    "#src/*": {
+      "default": "./src/*",
+      "production": "./dist/src/*"
+    }
+  },
   "license": "MIT",
   "keywords": [],
   "main": "dist/index.js",
@@ -57,6 +63,7 @@
     "prepare": "pm-exec run build && pm-exec husky install",
     "prepublishOnly": "pm-exec run test && pm-exec run lint",
     "preversion": "pm-exec run lint",
+    "start": "node --conditions=production dist/src/index.js",
     "test": "vitest",
     "version": "pm-exec run format && git add -A src"
   },

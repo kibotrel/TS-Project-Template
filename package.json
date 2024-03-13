@@ -29,22 +29,19 @@
     "pm-exec": "1.0.0",
     "prettier": "3.2.5",
     "ts-node": "10.9.2",
+    "tsc-alias": "1.8.8",
     "typescript": "5.3.3",
     "vitest": "1.2.2"
   },
   "engines": {
-    "node": "20.11.0",
-    "pnpm": ">=7"
+    "node": "20.11.0"
   },
   "files": [
     "dist/**/*"
   ],
   "homepage": "",
   "imports": {
-    "#src/*": {
-      "default": "./src/*",
-      "production": "./dist/src/*"
-    }
+    "#src/*": "./src/*",
   },
   "license": "MIT",
   "keywords": [],
@@ -55,7 +52,7 @@
     "url": ""
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "dev": "nodemon src/index.ts",
     "format": "prettier --write src/**/*.ts",
     "lint": "eslint src/**/*.ts --config .eslintrc",
@@ -63,7 +60,7 @@
     "prepare": "pm-exec run build && pm-exec husky install",
     "prepublishOnly": "pm-exec run test && pm-exec run lint",
     "preversion": "pm-exec run lint",
-    "start": "node --conditions=production dist/src/index.js",
+    "start": "pm-exec run build && node dist/src/index.js",
     "test": "vitest",
     "version": "pm-exec run format && git add -A src"
   },

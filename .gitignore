@@ -16,3 +16,7 @@ coverage
 .zip
 .csv
 .tmp
+
+# Excluded files
+# -----------------------------------
+!examples/*

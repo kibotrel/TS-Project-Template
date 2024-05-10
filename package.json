@@ -24,7 +24,7 @@
     "eslint-plugin-tsdoc": "0.2.17",
     "eslint-plugin-unicorn": "52.0.0",
     "eslint-plugin-vitest": "0.3.22",
-    "husky": "8.0.3",
+    "husky": "9.0.11",
     "nodemon": "3.1.0",
     "pm-exec": "1.0.0",
     "prettier": "3.2.5",
@@ -34,7 +34,7 @@
     "vitest": "1.6.0"
   },
   "engines": {
-    "node": "20.11.0"
+    "node": "20.12.2"
   },
   "files": [
     "dist/**/*"
@@ -57,7 +57,7 @@
     "format": "prettier --write src/**/*.ts",
     "lint": "eslint src/**/*.ts --config .eslintrc",
     "postversion": "git push && git push --tags",
-    "prepare": "pm-exec run build && pm-exec husky install",
+    "prepare": "pm-exec run build && pm-exec husky",
     "prepublishOnly": "pm-exec run test && pm-exec run lint",
     "preversion": "pm-exec run lint",
     "start": "pm-exec run build && node dist/src/index.js",

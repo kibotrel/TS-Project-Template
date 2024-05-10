@@ -41,7 +41,12 @@
     "target": "ESNext"
   },
   "exclude": ["**/node_modules/**", "**/*/lib", "**/*/dist"],
-  "include": ["src/**/*", "vitest.config.ts", "commitlint.config.ts"],
+  "include": [
+    "src/**/*",
+    "vitest.config.ts",
+    "commitlint.config.ts",
+    "logTypescriptErrorLoader.js"
+  ],
   "ts-node": {
     "esm": true
   }
